@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estadodepago.css" />
+    <title>Pago Pendiente</title>
+</head>
+<body>
+
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <svg class="logo" viewBox="0 0 150 50">
+                <text x="10" y="35" fill="#2ecc71" font-size="24" font-weight="bold">MiEmpresa</text>
+            </svg>
+            <h1 class="receipt-title">Recibo de Pago</h1>
+            <p>¡Gracias por tu compra!</p>
+        </div>
+
+        <div class="receipt-details">
+            <div class="detail-group">
+                <p class="detail-label">Número de Orden</p>
+                <p class="detail-value">#ORD-2023-1234</p>
+            </div>
+            <div class="detail-group">
+                <p class="detail-label">Fecha</p>
+                <p class="detail-value" id="current-date"></p>
+            </div>
+            <div class="detail-group">
+                <p class="detail-label">Cliente</p>
+                <p class="detail-value">Juan Pérez</p>
+            </div>
+            <div class="detail-group">
+                <p class="detail-label">Método de Pago</p>
+                <p class="detail-value">Tarjeta de Crédito ****1234</p>
+            </div>
+        </div>
+
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>2</td>
+                    <td>$50.00</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>1</td>
+                    <td>$75.00</td>
+                    <td>$75.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <div class="total-box">
+                <div class="total-row">
+                    <span class="total-label">Subtotal</span>
+                    <span class="total-value">$175.00</span>
+                </div>
+                <div class="total-row">
+                    <span class="total-label">IVA (16%)</span>
+                    <span class="total-value">$28.00</span>
+                </div>
+                <div class="total-row grand-total">
+                    <span class="total-label">Total</span>
+                    <span class="total-value">$203.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="https://wa.me/?text=Tu%20recibo%20de%20pago%20%23ORD-2023-1234%20por%20%24203.00%20https%3A%2F%2Fpayments.example.com%2Freceipt%2FORD-2023-1234"
+               class="btn btn-whatsapp">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="..."></path>
+                </svg>
+                Compartir por WhatsApp
+            </a>
+            <a href="https://payments.example.com/download-receipt/ORD-2023-1234" class="btn btn-download">Descargar PDF</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    max-width: 350px;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    color: #ccff00; /* Color de pelota de tenis */
+    margin-bottom: 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 0.5rem;
+  }
+  input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
+  }
+  input[type="submit"] {
+    background-color: #ccff00;
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: #b3e600;
+  }
+  .links {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .links a {
+    color: #ccff00;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .links a:hover {
+    text-decoration: underline;
+  }

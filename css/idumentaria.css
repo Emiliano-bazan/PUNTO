@@ -1,0 +1,170 @@
+:root {
+    --tennis-ball: #ccff00;
+    --dark-gray: #333333;
+    --light-gray: #cccccc;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+    color: white;
+  }
+  
+  header {
+    background: linear-gradient(to bottom, black 50%, var(--dark-gray) 50%);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--tennis-ball);
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: var(--tennis-ball);
+    text-align: center;
+  }
+  
+  form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--tennis-ball);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    background-color: var(--dark-gray);
+    color: white;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .file-upload {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--tennis-ball);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-upload:hover {
+    background-color: #a6cc00;
+  }
+  
+  #image-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--tennis-ball);
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a6cc00;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #tennis-ball-loader {
+    width: 50px;
+    height: 50px;
+    background-color: var(--tennis-ball);
+    border-radius: 50%;
+    position: relative;
+    animation: bounce-loader 2s infinite linear;
+  }
+  
+  @keyframes bounce-loader {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(calc(50vw - 25px), calc(50vh - 25px));
+    }
+    50% {
+      transform: translate(calc(100vw - 50px), 0);
+    }
+    75% {
+      transform: translate(calc(50vw - 25px), calc(-50vh + 25px));
+    }
+  }
